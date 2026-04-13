@@ -18,6 +18,7 @@
         "ms-toolsai.jupyter-renderers"
       ],
       "settings": {
+        
         "chat.agent.enabled": false,
         "chat.disableAIFeatures": true,
 
