@@ -175,7 +175,7 @@ def eulero_indietro(f, t0, tN, y0, h, nmax_pf=300, toll_pf=1e-5):
         return t_h, u_h
 
 
-def crank_nicolson(f, t0, tN, y0, h, nmax_pf=300, toll_pf=1e-5):
+def crank_nicolson(f, t0, tN, y0, h, nmax_pf=1000, toll_pf=1e-10):
     """
     Metodo di Crank-Nicolson.
 
@@ -229,7 +229,7 @@ def crank_nicolson(f, t0, tN, y0, h, nmax_pf=300, toll_pf=1e-5):
     return t_h, u_h
 
 
-def puntofisso(phi, x0, nmax=100, toll=1.0e-6):
+def puntofisso(phi, x0, nmax=1000, toll=1.0e-10):
     """
     Metodo del punto fisso (fixed-point iteration).
 
